@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fallou Karim Diongue | Développeur Full Stack</title>
+    <title>Fallou Karim Diongue | Développeur Full Stack & IoT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/pp.jpeg">
+    <style>
+        /* Style supplémentaire pour centrer la photo */
+      
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+        /* Ajustement pour les cartes portfolio RFID */
+        .rfid-images {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .rfid-image {
+            width: 48%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="nav-container">
-                <a href="#" class="logo">
-                    <i class="fas fa-code"></i>
-                    FD
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#education">Formation</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#portfolio">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
     <!-- Header/Hero -->
     <header class="hero-header">
         <div class="container">
             <div class="hero-container">
                 <div class="hero-content">
                     <h1 class="fade-in">Fallou <span class="highlight">Diongue</span></h1>
-                    <div class="title fade-in stagger-delay-1">Développeur Full Stack</div>
-                    <p class="subtitle fade-in stagger-delay-2">Passionné par la création de solutions innovantes
+                    <div class="title fade-in stagger-delay-1">Développeur Full Stack & IoT</div>
+                    <p class="subtitle fade-in stagger-delay-2">Passionné par la création de solutions innovantes entre le web et l'électronique</p>
                     <div class="hero-info fade-in stagger-delay-3">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Dakar, Sénégal</span>
+                            <span>Dakar, Sénégal / Stavropol, Russie</span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-envelope"></i>
@@ -71,12 +73,6 @@
                 <div class="hero-image fade-in stagger-delay-3">
                     <div class="profile-img-container">
                         <img src="assets/images/pp.jpeg" alt="Fallou Karim Diongue" class="profile-img">
-                    </div>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Java</span>
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">NextJS</span>
-                        <span class="tech-badge">JavaScript</span>                    
                     </div>
                 </div>
             </div>
@@ -142,13 +138,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="fade-in">Développeur logiciel titulaire d'une licence en informatique, avec plusieurs projets personnels déployés pour répondre à des besoins réels au Sénégal. Actuellement en année préparatoire en Russie, j'ai déjà démontré ma capacité d'adaptation et mon engagement dans un parcours académique international.</p>
-                    <p class="fade-in stagger-delay-1">Motivé, discipliné et orienté vers l'innovation, je souhaite poursuivre un Master en informatique afin de renforcer mes compétences et contribuer au développement technologique de mon pays.</p>
+                    <p class="fade-in stagger-delay-1">Passionné par l'IoT et les systèmes embarqués, je combine développement web et électronique pour créer des solutions innovantes. Motivé, discipliné et orienté vers l'innovation, je souhaite poursuivre un Master en informatique afin de renforcer mes compétences et contribuer au développement technologique de mon pays.</p>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-card fade-in stagger-delay-2">
                         <div class="skill-header">
                             <span class="skill-name">Java</span>
-                            <span>80%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 80%;"></div>
@@ -157,7 +152,6 @@
                     <div class="skill-card fade-in stagger-delay-3">
                         <div class="skill-header">
                             <span class="skill-name">JavaScript</span>
-                            <span>75%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 75%;"></div>
@@ -166,7 +160,6 @@
                     <div class="skill-card fade-in stagger-delay-2">
                         <div class="skill-header">
                             <span class="skill-name">React</span>
-                            <span>70%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 70%;"></div>
@@ -175,13 +168,27 @@
                     <div class="skill-card fade-in stagger-delay-3">
                         <div class="skill-header">
                             <span class="skill-name">NextJS</span>
-                            <span>65%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" style="width: 65%;"></div>
                         </div>
                     </div>
+                    <!-- NOUVELLES COMPÉTENCES -->
+                    <div class="skill-card fade-in stagger-delay-2">
+                        <div class="skill-header">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
                     </div>
+                    <div class="skill-card fade-in stagger-delay-3">
+                        <div class="skill-header">
+                            <span class="skill-name">IoT / ESP32</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,10 +207,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2025</span>
-                        <h3>Développeur Full Stack</h3>
+                        <h3>Développeur Full Stack & IoT</h3>
                         <h4>Mak International Group</h4>
-                        <p>Développement et maintenance d'applications web et mobiles pour les clients de l'entreprise.</p>
-                        <p><strong>Technologies :</strong> Java, JavaScript, React, NextJS, MongoDB</p>
+                        <p>Développement et maintenance d'applications web et mobiles pour les clients de l'entreprise. Conception de systèmes IoT pour la gestion intelligente.</p>
+                        <p><strong>Technologies :</strong> Java, JavaScript, React, NextJS, C++, ESP32, RFID</p>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -237,12 +244,12 @@
                             <span class="tag">NextJS</span>
                         </div>
                         <h3>ColiSen</h3>
-                        <p>Application de transit international pour le suivi , rappel sms , et gestion des colis.  Solution complète pour les entreprises de logistique.</p>
+                        <p>Application de transit international pour le suivi, rappel SMS, et gestion des colis. Solution complète pour les entreprises de logistique.</p>
                         <div class="portfolio-links">
                             <a href="https://github.com/Falloukarim?tab=repositories" class="portfolio-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i> Code source
                             </a>
-                            <a href="https://https://colis-sn.vercel.app/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://colis-sn.vercel.app/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i> Voir le site
                             </a>
                         </div>
@@ -257,7 +264,7 @@
                             <span class="tag">Node.js</span>
                         </div>
                         <h3>EasyFit</h3>
-                        <p>Application mobile pour les salles de gym avec gestion des abonnements,impression tickets ,  planning des cours et suivi des performances.</p>
+                        <p>Application mobile pour les salles de gym avec gestion des abonnements, impression tickets, planning des cours et suivi des performances.</p>
                         <div class="portfolio-links">
                             <a href="https://github.com/Falloukarim?tab=repositories" class="portfolio-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i> Code source
@@ -277,13 +284,57 @@
                             <span class="tag">React</span>
                         </div>
                         <h3>Klinika</h3>
-                        <p>Application de gestion pour cliniques médicales avec prise de rendez-vous,paiement en ligne, dossiers patients et gestion du personnel.</p>
+                        <p>Application de gestion pour cliniques médicales avec prise de rendez-vous, paiement en ligne, dossiers patients et gestion du personnel.</p>
                         <div class="portfolio-links">
                             <a href="https://github.com/Falloukarim?tab=repositories" class="portfolio-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i> Code source
                             </a>
                             <a href="https://klinika-sn.com/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i> Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NOUVEAU PROJET RFID -->
+                <div class="portfolio-card fade-in stagger-delay-3">
+                    <div class="rfid-images">
+                        <img src="assets/images/rfid.png" alt="Système RFID - Interface web" class="rfid-image">
+                        <img src="assets/images/rfid1.png" alt="Système RFID - Circuit ESP32" class="rfid-image">
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">NodeJs</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">MQTT Broker</span>
+                            <span class="tag">Socket.IO</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <h3>Système de Contrôle d'Accès RFID Intelligent</h3>
+                        <p><strong>Application IoT complète pour la gestion d'accès sécurisée</strong></p>
+                        <p>Système de contrôle d'accès en temps réel utilisant la technologie RFID avec ESP32. Les cartes sont authentifiées via une base de données centralisée et les événements sont visualisés sur une interface web en temps réel.</p>
+                        
+                        <div class="project-features">
+                            <p><strong>Fonctionnalités :</strong></p>
+                            <ul style="margin-left: 20px; margin-bottom: 15px;">
+                                <li>Authentification RFID en temps réel</li>
+                                <li>Interface web avec React et Socket.IO</li>
+                                <li>Base de données MySQL avec synchronisation</li>
+                                <li>Historique complet des accès</li>
+                                <li>Système de notifications en temps réel</li>
+                                <li>API REST pour gestion des utilisateurs</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Technologies :</strong> ESP32 (C++/Arduino), React.js, Node.js, Socket.IO, MySQL, Railway (déploiement)</p>
+                        
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Falloukarim/rfi-prototype" class="portfolio-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code source
+                            </a>
+                            <a href="https://rfi-prototype.vercel.app/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Voir la démo
                             </a>
                         </div>
                     </div>
@@ -307,7 +358,7 @@
                         </div>
                         <div>
                             <h3>Adresse</h3>
-                            <p>Dakar, Sénégal</p>
+                            <p>Dakar, Sénégal / Stavropol, Russie</p>
                         </div>
                     </div>
                     <div class="contact-card fade-in stagger-delay-1">
@@ -369,8 +420,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="logo" style="color: white; -webkit-background-clip: initial; background-clip: initial;">Fallou Karim Diongue</div>
-                <p style="max-width: 500px; color: rgba(255, 255, 255, 0.8);">Développeur Full Stack passionné par la création de solutions innovantes et impactantes.</p>
+                <div class="logo" style="color: white; -webkit-background-clip: initial; background-clip: initial;">
+                    <i class="fas fa-code"></i> Fallou Diongue
+                </div>
+                <p style="max-width: 500px; color: rgba(255, 255, 255, 0.8);">Développeur Full Stack & IoT passionné par la création de solutions innovantes entre le web et l'électronique embarquée.</p>
                 <div class="social-links">
                     <a href="https://github.com/Falloukarim" class="social-link" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
@@ -395,10 +448,42 @@
     <!-- Bouton PDF -->
     <div class="pdf-download">
         <button class="btn btn-primary" onclick="generatePDF()">
-            <i class="fas fa-download"></i> Télécharger PDF
+            <i class="fas fa-download"></i> Télécharger CV PDF
         </button>
     </div>
 
     <script src="assets/js/script.js"></script>
+    <script>
+        // Script pour l'année en cours dans le footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Script pour le formulaire de contact
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message! Je vous répondrai dans les plus brefs délais.');
+            this.reset();
+        });
+        
+        // Animation au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
